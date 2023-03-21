@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import Head from "next/head";
 
 import { getPosts } from "../services";
@@ -7,7 +6,7 @@ import PostWidget from "../components/PostWidget";
 import Categories from "../components/Categories";
 import FeaturedPost from "../sections/FeaturedPost";
 
-const Home: NextPage = ({ posts }) => {
+const Home = ( posts ) => {
   return (
     <div className="container mx-auto px-10 mb-8">
       <Head>
