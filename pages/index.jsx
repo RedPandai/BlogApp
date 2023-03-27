@@ -6,13 +6,14 @@ import PostWidget from "../components/PostWidget";
 import Categories from "../components/Categories";
 import FeaturedPost from "../sections/FeaturedPost";
 
-const Home = ( {posts} ) => {
+const Home = ({ posts }) => {
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <>
       <Head>
         <title>Jingyang's Blog</title>
         <link rel="icon" href="/logo.PNG" />
       </Head>
+      <div className="container mx-auto px-10 mb-8">
         <FeaturedPost />
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-8 col-span-1">
@@ -28,6 +29,7 @@ const Home = ( {posts} ) => {
           </div>
         </div>
       </div>
+    </>
   );
 };
 

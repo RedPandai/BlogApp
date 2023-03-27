@@ -7,7 +7,7 @@ const FeaturedPostCard = ({ post }) => {
   return (
     <div className="relative h-72">
       <div
-        className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72"
+        className="absolute rounded-lg bg-center bg-no-repeat bg-cover shadow-md inline-block w-full h-72 brightness-50"
         style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
       />
       <div className="flex flex-col rounded-lg p-4 items-center justify-center absolute w-full h-full">
