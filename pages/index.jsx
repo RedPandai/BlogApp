@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import { getPosts } from "../services";
 import PostCard from "../components/PostCard";
 import PostWidget from "../components/PostWidget";
@@ -8,11 +6,6 @@ import FeaturedPost from "../sections/FeaturedPost";
 
 const Home = ({ posts }) => {
   return (
-    <>
-      <Head>
-        <title>Jingyang's Blog</title>
-        <link rel="icon" href="/logo.PNG" />
-      </Head>
       <div className="container mx-auto px-10 mb-8">
         <FeaturedPost />
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -29,7 +22,6 @@ const Home = ({ posts }) => {
           </div>
         </div>
       </div>
-    </>
   );
 };
 
